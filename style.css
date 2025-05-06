@@ -1,0 +1,44 @@
+/* Mengatur ulang margin dan padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+  background-color: #fff0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Emoji heart dengan ukuran font responsif */
+.emoji-heart {
+  font-size: 15vw;
+  cursor: pointer;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+/* Caption dengan ukuran font responsif */
+.caption {
+  margin-top: 20px;
+  font-size: 4vw;
+  color: #444;
+}
+
+/* Menjaga agar audio element tersembunyi */
+audio {
+  display: none;
+}
